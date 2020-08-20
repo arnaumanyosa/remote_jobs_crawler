@@ -1,0 +1,24 @@
+{
+  "name": "jobs_crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/*.js --exit"
+  },
+  "author": "Arnau Manyosa-Plaza",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "escape-html": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  },
+  "mocha": {
+    "timeout": 2000
+  }
+}
