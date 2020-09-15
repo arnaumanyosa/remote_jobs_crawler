@@ -72,17 +72,18 @@ exports.addJobs = async (jobs) => {
     if (error.response) {
       //Request made but server response different of 2xx
       console.log(
-        "addJob error.response.data TITLE = ",
+        "addJobs error.response.data TITLE = ",
         error.response.data.title
       );
-      console.log("addJob error.response.status = ", error.response.status);
-      console.log("addJob error.response.headers = ", error.response.headers);
+      console.log("addJobs error.response = ", error.response);
+      console.log("addJobs error.response.status = ", error.response.status);
+      console.log("addJobs error.response.headers = ", error.response.headers);
     } else if (error.request) {
       // Request made but no response received
-      console.log("addJob error request = ", error.request);
+      console.log("addJobs error request = ", error.request);
     } else {
       // Something happened in setting up the request and triggered an Error
-      console.log("addJob error", error.message);
+      console.log("addJobs error", error.message);
     }
   }
 };
